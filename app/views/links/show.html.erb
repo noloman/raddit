@@ -1,12 +1,16 @@
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @link.url %>
-</p>
-
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
+<div class="link row clearfix">
+	<h2>
+		<%= link_to @link.title, @link.url %>
+	</h2>
+</div>
+<button type="button" class="btn btn-primary">
+	<%= link_to 'Visit URL', link_path(@link) %>
+</button>
+<% if user_signed_in? && current_user == @link.user %>
+	<button type="button" class="btn btn-warning">
+		<%= link_to 'Edit', edit_link_path(@link) %>
+	</button>
+	<button type="button" class="btn btn-danger">
+		<%= link_to 'Remove', @link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</button>
+<% end %>
