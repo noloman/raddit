@@ -19,7 +19,7 @@
 
 <div class="btn-group">
 	<% if user_signed_in? && current_user == @link.user %>
-		<button id="edit_link_id" type="button" class="btn btn-warning">
+		<button type="button" class="btn btn-warning">
 			<%= link_to 'Edit', edit_link_path(@link) %>
 		</button>
 		<button type="button" class="btn btn-danger">
