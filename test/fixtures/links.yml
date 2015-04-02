@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  url: MyString
+  title: link1
+  url: http://www.google.com
 
 two:
-  title: MyString
-  url: MyString
+  title: link2
+  url: http://www.google.com
