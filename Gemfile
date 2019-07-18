@@ -21,7 +21,7 @@ gem 'jbuilder', '~> 2.8'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 1.0.0', group: :doc
 # Voting
-gem 'acts_as_votable', '~> 0.12.0'
+gem 'acts_as_votable', '~> 0.12.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
