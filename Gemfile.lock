@@ -53,9 +53,9 @@ GEM
       sassc (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
-    coffee-rails (4.2.2)
+    coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
+      railties (>= 5.2.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -192,7 +192,7 @@ DEPENDENCIES
   acts_as_votable (~> 0.12.0)
   bootstrap-sass (~> 3.4.1)
   byebug
-  coffee-rails (~> 4.2.2)
+  coffee-rails (~> 5.0.0)
   devise
   jbuilder (~> 2.8)
   jquery-rails
